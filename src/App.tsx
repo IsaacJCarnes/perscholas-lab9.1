@@ -1,12 +1,15 @@
-import AlertBox from "./components/AlertBox/AlertBox"
+import AlertBox from "./components/AlertBox/AlertBox";
+import UserProfileCard from "./components/UserProfileCard/UserProfileCard";
 
 function App() {
-
   return (
     <>
-    <AlertBox type="success" message="Hello"></AlertBox>
+      <UserProfileCard
+        user={{ id: "023", name: "John", email: "j@g.com", role: "vp" }}
+      ></UserProfileCard>
+      <AlertBox type="success" message="Hello"></AlertBox>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

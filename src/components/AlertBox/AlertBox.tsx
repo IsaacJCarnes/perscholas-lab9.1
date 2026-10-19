@@ -1,3 +1,4 @@
+import "./AlertBox.css";
 import { useState } from "react";
 import type { AlertBoxProps } from "../../types";
 
