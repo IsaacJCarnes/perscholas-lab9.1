@@ -1,0 +1,28 @@
+details {
+  margin-top: 20px;
+}
+
+.animated-details::details-content {
+  block-size: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  /* Animate height and fade while allowing discrete state changes to transition */
+  transition-property: block-size, opacity, content-visibility;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-behavior: allow-discrete;
+}
+
+.animated-details[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+
+summary {
+  margin-bottom: 10px;
+}
+
+summary h4{
+  display: contents;
+}

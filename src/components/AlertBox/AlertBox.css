@@ -1,6 +1,22 @@
 dialog{
+    margin-top: 10px;
     position: relative;
 }
+
+dialog button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    background-color: unset;
+    border: unset;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
+}
+
+
+
 .alert.success{
     background-color: #dcfce7;
     border: 2px solid #22c556;
