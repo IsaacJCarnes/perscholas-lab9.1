@@ -17,14 +17,22 @@ function App() {
       <h3>React Components</h3>
       <Details summary="User Profile Card">
         <UserProfileCard
-          user={{ id: "023", name: "John", email: "j@g.com", role: "vp" }}
+          user={{
+            id: "023",
+            name: "John Doe",
+            email: "john.doe@example.com",
+            role: "Software Engineer",
+            avatarUrl:
+              "https://png.pngtree.com/png-vector/20250512/ourmid/pngtree-default-avatar-profile-icon-gray-placeholder-vector-png-image_16213764.png",
+          }}
+          showRole={true}
+          showEmail={true}
+          onEdit={(userId) => alert(`Editing user ${userId}`)}
         ></UserProfileCard>
       </Details>
       <Details summary="Alert Box" open={true}>
         <div className="inputDisplay">
-          <button
-            onClick={() => setAlertBoxOpen(!alertBoxOpen)}
-          >
+          <button onClick={() => setAlertBoxOpen(!alertBoxOpen)}>
             Alert Box: {alertBoxOpen ? "Open" : "Closed"}
           </button>
           <select onChange={(e) => setAlertStatus(e.target.value as AlertType)}>
@@ -36,12 +44,14 @@ function App() {
         </div>
         <AlertBox
           type={alertStatus}
-          message="Hello"
+          message="Your profile has been updated successfully!"
           open={alertBoxOpen}
           onClose={() => {
             setAlertBoxOpen(false);
           }}
-        ></AlertBox>
+        >
+          <p className="text-sm">You can now continue using the application.</p>
+        </AlertBox>
       </Details>
     </>
   );
