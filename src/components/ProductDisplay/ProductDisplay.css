@@ -1,0 +1,51 @@
+.product-display {  
+  margin-top: 20px;
+  width: fit-content;
+  max-width: 900px;
+  height: fit-content;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: black;
+  align-items: center;
+  gap: 10px;
+  justify-self: center;
+}
+
+.product-image {
+    width: 100%;
+    object-fit: cover;
+    height: 175px;
+    margin: 0px;
+}
+
+.product-name{
+    font-weight: 700;
+}
+
+.product-price{
+    color: blue;
+    font-weight: 700;
+}
+
+.product-description{
+    width: 80%;
+    margin: 0px 10px;
+}
+
+.product-button{
+    background-color: rgb(41, 105, 224);
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin: 10px 10px;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}

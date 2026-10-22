@@ -11,9 +11,7 @@ export default function UserProfileCard(props: UserProfileCardProps) {
           {props.showEmail && (
             <span className="card-email text-sm">{props.user.email}</span>
           )}
-          {props.showRole && (
-            <span className="text-sm">{props.user.role}</span>
-          )}
+          {props.showRole && <span className="text-sm">{props.user.role}</span>}
           {props.children}
         </div>
       </div>
