@@ -78,7 +78,7 @@ function App() {
             Show Description: {showProductDescription ? "True" : "False"}
           </button>
           <button onClick={() => setShowProductStock(!showProductStock)}>
-            Show Stock: {productInStock ? "True" : "False"}
+            Show Stock: {showProductStock ? "True" : "False"}
           </button>
           <button onClick={() => setProductInStock(!productInStock)}>
             In Stock: {productInStock ? "True" : "False"}
