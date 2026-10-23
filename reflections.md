@@ -1,0 +1,8 @@
+ - How did you handle optional props in your components?
+  - Using falsey values allowed me to make sure a variable existed and/or was not false before using it in a component. 
+ - What considerations did you make when designing the component interfaces?
+  - Not all properties were needed and many could have an assumed default. 
+ - How did you ensure type safety across your components?
+  - Using typescript interfaces allowed me to know what props should be sent into the component. 
+ - What challenges did you face when implementing component composition?
+  - I had to ensure the event functions passed down in props sent back the relevant information (user.id/product.id) 
